@@ -38,10 +38,12 @@ RUN echo "en_US.UTF-8 UTF-8" > /etc/locale.gen && \
 
 RUN echo "dev ALL=(ALL) ALL" > /etc/sudoers
 
-WORKDIR /home/wwwroot/
+WORKDIR /home/www-data/
 
+#RUN groupadd --gid 10060 www-data
+#RUN useradd www-data --uid 10060 --gid www-data
 #RUN file="$(ls -al sf4)" && echo $file
-#RUN chown -R www-data:www-data /home/wwwroot/sf4
+#RUN chown -R www-data:www-data /home/www-data/
 ##</romaricp>##
 
 EXPOSE 9000
