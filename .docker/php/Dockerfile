@@ -2,12 +2,20 @@ FROM php:7.2.10-fpm
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends vim curl debconf subversion git apt-transport-https apt-utils \
-    build-essential locales acl mailutils wget nodejs zip unzip \
+    build-essential locales acl mailutils wget nodejs zip unzip libmcrypt-dev libpng-dev \
     gnupg gnupg1 gnupg2 \
     zlib1g-dev \
     sudo
 
-RUN docker-php-ext-install pdo pdo_mysql zip bcmath
+RUN pecl install mcrypt-1.0.1
+
+RUN docker-php-ext-enable mcrypt
+
+RUN pecl install -o -f redis
+RUN docker-php-ext-enable redis
+
+
+RUN docker-php-ext-install pdo pdo_mysql zip bcmath gd
 
 COPY php.ini /usr/local/etc/php/php.ini
 COPY php-fpm-pool.conf 	/usr/local/etc/php/pool.d/www.conf
