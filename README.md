@@ -5,7 +5,7 @@ Weeeeee
 To get into a container's bash
 
 ```
-docker exec -it 429ffafce81f bash
+docker exec -it [Id or name] bash
 ```
 
 To get into the container with a specific user
