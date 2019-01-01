@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/comp/pocomos" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/comp/pocomos/vendor/consolibyte/quickbooks" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/comp/pocomos/vendor/orkestra/pdf-bundle/Orkestra/Bundle/PdfBundle" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/comp/pocomos/vendor/pocomos/transactor" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/comp/pocomos/vendor/pocomos/transactor-bundle/Orkestra/Bundle/TransactorBundle" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pocomos" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pocomos/vendor/consolibyte/quickbooks" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pocomos/vendor/pocomos/transactor" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pocomos/vendor/pocomos/transactor-bundle/Orkestra/Bundle/TransactorBundle" vcs="Git" />
+  </component>
+</project>
