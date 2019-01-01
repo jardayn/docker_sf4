@@ -8,3 +8,6 @@
 .docker/data/db
 ###< symfony/framework-bundle ###
 comp
+###> symfony/web-server-bundle ###
+/.web-server-pid
+###< symfony/web-server-bundle ###
